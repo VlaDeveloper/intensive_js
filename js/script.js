@@ -41,7 +41,7 @@ function switchMode(){
             item.style.color = '#fff';
         });
         
-        document.querySelector('.header__item-descr').style.color = '#000';
+        document.querySelector('.header__item-descr').style.color = '#fff';
         document.querySelector('.logo > img').src = 'logo/youtube_night.svg';
     } else {
         night = false;
@@ -57,6 +57,7 @@ function switchMode(){
         document.querySelectorAll('.videos__item-views').forEach(item => {
             item.style.color = '#000';
         });
+        document.querySelector('.header__item-descr').style.color = '#000';
         document.querySelector('.logo > img').src = 'logo/youtube.svg';
     }
 }
